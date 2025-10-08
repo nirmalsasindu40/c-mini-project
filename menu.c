@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "heder.h"
+#include "functions.h"
 
 char choice;
 
@@ -72,3 +72,4 @@ int main(){
     
 
 }
+
