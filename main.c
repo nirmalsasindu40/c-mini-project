@@ -6,10 +6,9 @@ char choice;
 
 int main(){
     system("cls");
-    printf("==========================================================================================\n");
+    doubleline();
     printf("WELCOME TO THE PARLIMENT ELECTION SYSTEM\n");
-    printf("==========================================================================================\n\n1");
-
+    doubleline();
     do{
 
     printf("Menu:\n\n");
@@ -19,9 +18,9 @@ int main(){
     printf("4.Candidate Registration\n");
     printf("5.Candidate login\n");
     printf("6.party registertion\n");
-    printf("6.party login\n");
-    printf("7.polling\n");
-    printf("8.results\n");
+    printf("7.party login\n");
+    printf("8.polling\n");
+    printf("9.results\n");
     printf("0.exit\n\n");
 
     separator();
@@ -32,44 +31,78 @@ int main(){
     switch(choice){
         case '1':
             system("cls");
-            printf("\nyou are in ADMIN PANEL\n");
+            doubleline();
+            printf("you are in ADMIN PANEL\n");
+            doubleline();
             break;
 
         case '2':
             system("cls");
-            printf("\nyou are Voter Registration\n");
+            doubleline();
+            printf("you are in Voter Registration\n");
+            doubleline();
             voter_registration();
             break;
 
         case '3':
             system("cls");
-            printf("\nyou are in Candidate Registration\n");
-            candidate_registration();
+            doubleline();
+            printf("you are in voter login\n");
+            doubleline();
             break;
 
         case '4': 
             system("cls");
-            printf("\nyou are in party registertion\n");
+            doubleline();
+            printf("you are in candidate registertion\n");
+            doubleline();
+            candidate_registration();
             break;
 
         case '5':
             system("cls");
-            printf("\nyou are in polling\n");
+            doubleline();
+            printf("you are in candidate login\n");
+            doubleline();
             break;
 
         case '6':
             system("cls");
-            printf("\nyou are in results\n\n");
+            doubleline();
+            printf("you are in party registration\n\n");
+            doubleline();
+            break;
+
+        case '7':
+            system("cls");
+            doubleline();
+            printf("you are in party loging\n");
+            doubleline();
+            break;
+
+        case '8':
+            system("cls");
+            doubleline();
+            printf("you are in polling\n");
+            doubleline();
+            break;
+        case '9':
+            system("cls");
+            doubleline();
+            printf("you are in results\n");
+            doubleline();
             break;
 
         case '0':
             system("cls");
-            printf("\nyou are choosed exit................\n\n");
+            doubleline();
+            printf("you are exiting..............\n");
+            doubleline();
             break;
 
         default:
             system("cls");
-            printf("\nenter the corrrect valied number\n");
+            printf("\nenter the corrrect valied number..................\n");
 
 
         
