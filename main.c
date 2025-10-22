@@ -53,6 +53,7 @@ int main(){
 
         case '6':
             printf("\nyou are in results\n\n");
+            loging_party();
             break;
 
         case '0':
