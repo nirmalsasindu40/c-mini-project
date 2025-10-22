@@ -10,6 +10,8 @@ void doubleline();
 // Registration Functions
 void voter_registration();
 void candidate_registration();
+int Party_Registration();
+int loging_party();
 
 // Login Functions
 void voter_login();

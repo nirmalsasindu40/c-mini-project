@@ -9,7 +9,7 @@ int main() {
     doubleline();
     printf("WELCOME TO THE PARLIAMENT ELECTION SYSTEM\n");
     doubleline();
-    
+        
     do {
         printf("\n");
         printf("Main Menu:\n\n");
