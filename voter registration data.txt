@@ -1,2 +1,4 @@
-
-
+geeth|6422140|galle|geeth123|123456789|pass123
+nirmal|6422140|galle|nirmal123|234567890|nirmal123
+minula|6422156|kaluthara|minula123|200414801485|pass123
+sandaru|6422156|sabaragamuwa|sandaru0096|200233801449|123

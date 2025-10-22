@@ -7,6 +7,7 @@ void candidate_registration(){
     char party[150];
     char district[25];
     int election_number[20];
+    int age[3];
     char nic[50];
     char username[55];
     char password[25];
@@ -20,15 +21,24 @@ void candidate_registration(){
 
     printf("enter your district : ");
     scanf("%s",district);
+    
+    printf("Enter your election number: ");
+    while(scanf("%d", &election_number) != 1) {  
+        printf("Invalid input! Please enter a number: ");
+        while(getchar() != '\n');  
+    }
 
-    printf("enter your election_number : ");
-    scanf("%d",election_number);
+    printf("enter your age - ");
+     while(scanf("%d", age) != 1) {  
+        printf("Invalid input! Please enter a number: ");
+        while(getchar() != '\n');  
+    }
 
     printf("enter your NIC number : ");
     scanf("%s",nic);
 
     printf("enter your username : ");
-    scanf("%S",username);
+    scanf("%s",username);
 
     printf("enter your password : ");
     scanf("%s",password);
@@ -40,14 +50,8 @@ void candidate_registration(){
         return;
     }
 
-    fprintf(fp,"name : %s\n",name);
-    fprintf(fp, "party : %s\n",party);
-    fprintf(fp, "election number : %d\n",election_number);
-    fprintf(fp, "NIC number : %s\n",nic);
-    fprintf(fp, "username : %s\n",username);
-    fprintf(fp, "password : %s\n",password);
+    fprintf(fp,"%s|%s|%s|%d|%s|%s|%s\n",name,party,district,election_number,nic,username,password);
 
-    file_separator(fp);
     fclose(fp);
     
     printf("Registration is succesfull....\n");

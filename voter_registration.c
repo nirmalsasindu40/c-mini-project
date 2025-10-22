@@ -1,9 +1,11 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 #include "heder.h"
 
 void voter_registration(){
     char name[100];
+    int age[3];
     char district[20];
     char username[50];
     char nic[20];
@@ -12,6 +14,12 @@ void voter_registration(){
 
     printf("enter your name - ");
     scanf("%s",name);
+
+    printf("entyer your age - ");
+    while(scanf("%d", age) != 1) {  
+        printf("Invalid input! Please enter a number: ");
+        while(getchar() != '\n');  
+    }
 
     printf("enter your district - ");
     scanf("%s",district);
@@ -33,12 +41,7 @@ void voter_registration(){
         return;
     }
 
-    fprintf(fp,"name : %s\n",name);
-    fprintf(fp,"username : %s\n",username);
-    fprintf(fp,"NIC number : %s\n",nic);
-    fprintf(fp,"password : %s\n",password);
-    fprintf(fp,"district : %s\n",district);
-    file_separator(fp);
+    fprintf(fp, "%s|%d|%s|%s|%s|%s\n",name,age,district,username,nic,password);
 
     fclose(fp);
 
@@ -49,4 +52,6 @@ void voter_registration(){
 
 
 
+
 }
+
