@@ -19,7 +19,7 @@ void candidate_login(){
     system("cls");  
     
     doubleline();
-    printf("      CANDIDATE LOGIN PAGE              \n");
+    printf("=================CANDIDATE LOGIN PAGE=================\n");
     doubleline();
     
     printf("Enter username: ");
@@ -34,8 +34,8 @@ void candidate_login(){
     fp = fopen("candidate registration data.txt", "r");
     
     if (fp == NULL){
-        printf("\n✗ No registered candidates found!\n");
-        printf("Please register first (Option 4).\n\n");
+        printf("\n No registered candidates found!\n");
+        printf("Please register first .\n\n");
         separator();
         return;
     }

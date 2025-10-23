@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -65,7 +66,6 @@ int Party_Registration() {
 
     return 0;
 }
-
 
 
 
