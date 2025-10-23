@@ -60,10 +60,10 @@ int main() {
             
             case '6':
                 system("cls");
-                doubleline();
-                printf("PARTY REGISTRATION\n");
-                doubleline();
-                printf("\nParty registration feature coming soon...\n\n");
+                loging_party();
+                
+               
+               
                 separator();
                 break;
             
