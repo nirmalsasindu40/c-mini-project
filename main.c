@@ -62,9 +62,12 @@ int main() {
                 system("cls");
                 loging_party();
                 
+<<<<<<< HEAD
                
                
                 separator();
+=======
+>>>>>>> 7c7fb0d538d7ee70ad7dc6350fd733efd41287ca
                 break;
             
             case '7':
