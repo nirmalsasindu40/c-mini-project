@@ -55,19 +55,18 @@ int main() {
                 break;
             
             case '5':
-                
+                system("cls");
+                candidate_login();
+
                 break;
             
             case '6':
                 system("cls");
                 loging_party();
                 
-<<<<<<< HEAD
                
                
                 separator();
-=======
->>>>>>> 7c7fb0d538d7ee70ad7dc6350fd733efd41287ca
                 break;
             
             case '7':
