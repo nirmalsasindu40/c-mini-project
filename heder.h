@@ -38,6 +38,12 @@ int is_polling_active();
 // Polling Functions
 void polling();
 int has_voter_voted(char *nic);
+int verify_voter(char *username, char *password, char *voter_nic);
+void display_candidates();
+void record_vote(char *candidate_name, char *voter_nic, char *voter_district);
+void mark_voter_as_voted(char *nic);
+void to_lowercase(char *str, char *result);
+int verify_candidate_in_district();
 
 // Results Functions
 void results();
