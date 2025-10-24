@@ -67,6 +67,7 @@ int main() {
             case '6':
                 system("cls");
                 loging_party();
+                
                 break;
             
             case '7':

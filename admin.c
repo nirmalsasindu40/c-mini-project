@@ -4,8 +4,8 @@
 #include "heder.h"
 
 // Admin credentials (hardcoded for security)
-#define ADMIN_USERNAME "voteadmin2004106"
-#define ADMIN_PASSWORD "voteadmin2004"
+#define ADMIN_USERNAME "admin"
+#define ADMIN_PASSWORD "admin1234"
 
 int admin_logged_in = 0;
 
