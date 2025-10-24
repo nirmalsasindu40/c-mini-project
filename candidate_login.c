@@ -1,12 +1,11 @@
+#include <stdio.h>
 #include<stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "heder.h"
 
-int candidate_logged_in = 0;
-char logged_candidate[100];
-
-
+int candidate_logged_in = 0;  
+char logged_candidate[100];   
 
 void candidate_login(){
     char username[55];
