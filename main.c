@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "heder.h"
 
-char choice;
-
 int main() {
+    char choice;
+    
     system("cls");
     doubleline();
     printf("WELCOME TO THE PARLIAMENT ELECTION SYSTEM\n");
@@ -31,7 +31,7 @@ int main() {
         
         switch(choice) {
             case '1':
-               
+                admin_panel();
                 break;
             
             case '2':
@@ -43,7 +43,12 @@ int main() {
                 break;
             
             case '3':
-                
+                system("cls");
+                doubleline();
+                printf("VOTER LOGIN\n");
+                doubleline();
+                printf("\nVoter login feature coming soon...\n\n");
+                separator();
                 break;
             
             case '4':
@@ -57,16 +62,11 @@ int main() {
             case '5':
                 system("cls");
                 candidate_login();
-
                 break;
             
             case '6':
                 system("cls");
                 loging_party();
-                
-               
-               
-                separator();
                 break;
             
             case '7':
@@ -81,7 +81,7 @@ int main() {
             case '8':
                 system("cls");
                 doubleline();
-                printf("8. Polling (Cast Vote)\n");
+                printf("POLLING (CAST VOTE)\n");
                 doubleline();
                 polling();
                 break;
@@ -91,7 +91,7 @@ int main() {
                 doubleline();
                 printf("ELECTION RESULTS\n");
                 doubleline();
-                
+                results();
                 break;
             
             case '0':
@@ -106,7 +106,7 @@ int main() {
             
             default:
                 system("cls");
-                printf("\n✗ Invalid choice! Please enter a valid option.\n\n");
+                printf("\nInvalid choice! Please enter a valid option.\n\n");
                 separator();
         }
         
