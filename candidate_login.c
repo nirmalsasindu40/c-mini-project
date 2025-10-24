@@ -69,7 +69,8 @@ void candidate_login(){
     if(login_success){
         candidate_logged_in = 1;
         doubleline();
-        printf("LOGIN SUCCESSFUL!\n");
+        printf("\033[1;32mLOGIN SUCCESSFUL!\033[0m\n");
+       
         doubleline();
         printf("\n   Welcome, %s!\n", logged_candidate);
         printf("   You are now logged in as a candidate.\n\n");
@@ -95,5 +96,6 @@ int is_candidate_logged_in(){
 void candidate_logout(){
     candidate_logged_in = 0;
     strcpy(logged_candidate, "");
-    printf("\nYou have been logged out successfully.\n\n");
+    printf("\033[1;32mYou have been logged out successfully.\033[0m\n");
+ 
 }

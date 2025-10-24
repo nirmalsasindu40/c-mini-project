@@ -28,7 +28,8 @@ int loging_party() {
            
    
     } else {
-        printf("Invalid login credentials!\n");
+        printf("\033[1;31mInvalid login credentials!\033[0m\n");
+       
     }
 
     return 0;
@@ -62,7 +63,8 @@ int Party_Registration() {
 
     fprintf(fp, "%s %d %s\n", name, code, leader);
     fclose(fp);
-    printf("Party Registered Successfully!\n");
+    printf("\033[1;32mParty Registered Successfully!\033[0m\n");
+    
 
     return 0;
 }
