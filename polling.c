@@ -241,5 +241,3 @@ int is_polling_active() {
     
     return status; // Returns 1 if active, 0 if not
 }
-
-
