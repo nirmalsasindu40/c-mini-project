@@ -10,11 +10,20 @@ void doubleline();
 // Registration Functions
 void voter_registration();
 void candidate_registration();
+int Party_Registration();
+int loging_party();
 
+//party registaion 
+int Party_Registration();
+int loging_party();
 // Login Functions
 void voter_login();
 void voter_logout();
 int is_voter_logged_in();
+
+//party registation
+int loging_party();
+int Party_Registration();
 
 void candidate_login();
 void candidate_logout();
@@ -37,5 +46,7 @@ void display_results_by_district();
 void display_results_by_party();
 void view_candidate_performance(char *candidate_name);
 void candidate_view_results(char *candidate_name);
+
+
 
 #endif

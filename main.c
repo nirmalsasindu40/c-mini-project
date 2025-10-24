@@ -9,7 +9,7 @@ int main() {
     doubleline();
     printf("WELCOME TO THE PARLIAMENT ELECTION SYSTEM\n");
     doubleline();
-    
+        
     do {
         printf("\n");
         printf("Main Menu:\n\n");
@@ -55,15 +55,17 @@ int main() {
                 break;
             
             case '5':
-                
+                system("cls");
+                candidate_login();
+
                 break;
             
             case '6':
                 system("cls");
-                doubleline();
-                printf("PARTY REGISTRATION\n");
-                doubleline();
-                printf("\nParty registration feature coming soon...\n\n");
+                loging_party();
+                
+               
+               
                 separator();
                 break;
             
