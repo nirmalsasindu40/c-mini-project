@@ -120,15 +120,59 @@ void display_results_by_party() {
     separator();
 }
 
+// Function to view candidate performance
+void view_candidate_performance(char *candidate_name) {
+    FILE *fp;
+    char line[500];
+    char voter_nic[50], candidate[100], party[150], district[25];
+    int count = 0;
+    
+    printf("\n========== CANDIDATE PERFORMANCE ==========\n\n");
+    
+    fp = fopen("votes.txt", "r");
+    
+    if (fp == NULL) {
+        printf("No votes found!\n");
+        separator();
+        return;
+    }
+    
+    printf("Votes for candidate: %s\n\n", candidate_name);
+    
+    while (fgets(line, sizeof(line), fp) != NULL) {
+        sscanf(line, "%[^|]|%[^|]|%[^|]|%s", voter_nic, candidate, party, district);
+        
+        if (strcmp(candidate, candidate_name) == 0) {
+            count++;
+        }
+    }
+    
+    if (count == 0) {
+        printf("No votes found for this candidate!\n");
+    } else {
+        printf("Total votes received: %d\n", count);
+    }
+    
+    fclose(fp);
+    separator();
+}
+
+// Function for candidates to view their own results
+void candidate_view_results(char *candidate_name) {
+    view_candidate_performance(candidate_name);
+}
+
 // Main results menu
 void results() {
     char choice;
+    char candidate_name[100];
     
     do {
         printf("\n========== ELECTION RESULTS MENU ==========\n\n");
         printf("1. Overall Results\n");
         printf("2. Results by District\n");
         printf("3. Results by Party\n");
+        printf("4. View Candidate Performance\n");
         printf("0. Back to Main Menu\n\n");
         separator();
         
@@ -146,6 +190,12 @@ void results() {
             
             case '3':
                 display_results_by_party();
+                break;
+            
+            case '4':
+                printf("\nEnter candidate name: ");
+                scanf("%s", candidate_name);
+                view_candidate_performance(candidate_name);
                 break;
             
             case '0':
