@@ -88,8 +88,10 @@ int main() {
             
             case '9':
                 system("cls");
+                results();
                 doubleline();
                 printf("ELECTION RESULTS\n");
+                
                 doubleline();
                 results();
                 break;

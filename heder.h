@@ -47,6 +47,7 @@ void display_results_by_party();
 void view_candidate_performance(char *candidate_name);
 void candidate_view_results(char *candidate_name);
 
-
+void display_overall_results();
+void results();
 
 #endif
