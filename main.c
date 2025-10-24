@@ -79,7 +79,11 @@ int main() {
                 break;
             
             case '8':
-                
+                system("cls");
+                doubleline();
+                printf("8. Polling (Cast Vote)\n");
+                doubleline();
+                polling();
                 break;
             
             case '9':
