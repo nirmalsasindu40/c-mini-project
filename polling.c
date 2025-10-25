@@ -282,19 +282,4 @@ void polling() {
     separator();
 }
 
-// Check if polling is active
-int is_polling_active() {
-    FILE *fp;
-    int status;
-    
-    fp = fopen("polling_status.txt", "r");
-    
-    if (fp == NULL) {
-        return 0; // Polling not active if file doesn't exist
-    }
-    
-    fscanf(fp, "%d", &status);
-    fclose(fp);
-    
-    return status; // Returns 1 if active, 0 if not
-}
+

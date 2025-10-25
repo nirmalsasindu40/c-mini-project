@@ -74,7 +74,7 @@ int main() {
                 doubleline();
                 printf("PARTY LOGIN\n");
                 doubleline();
-                printf("\nParty login feature coming soon...\n\n");
+                party_login();
                 separator();
                 break;
             
