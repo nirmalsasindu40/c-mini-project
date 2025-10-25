@@ -31,7 +31,12 @@ int main() {
         
         switch(choice) {
             case '1':
+                system("cls");
+                printf("ADMIN PANEL\n");
+                doubleline();
                 admin_panel();
+                doubleline();
+                separator();
                 break;
             
             case '2':
@@ -40,6 +45,7 @@ int main() {
                 printf("VOTER REGISTRATION\n");
                 doubleline();
                 voter_registration();
+                separator();
                 break;
             
             case '3':
@@ -47,7 +53,7 @@ int main() {
                 doubleline();
                 printf("VOTER LOGIN\n");
                 doubleline();
-                printf("\nVoter login feature coming soon...\n\n");
+                voter_login();
                 separator();
                 break;
             
@@ -57,16 +63,24 @@ int main() {
                 printf("CANDIDATE REGISTRATION\n");
                 doubleline();
                 candidate_registration();
+                separator();
                 break;
             
             case '5':
                 system("cls");
+                doubleline();
                 candidate_login();
+                doubleline();
+                separator();
                 break;
             
             case '6':
                 system("cls");
+                doubleline();
+                printf("PARTY LOGIN\n");
+                doubleline();
                 loging_party();
+                separator();
                 break;
             
             case '7':
@@ -84,16 +98,16 @@ int main() {
                 printf("POLLING (CAST VOTE)\n");
                 doubleline();
                 polling();
+                separator();
                 break;
             
             case '9':
                 system("cls");
-                results();
                 doubleline();
                 printf("ELECTION RESULTS\n");
-                
                 doubleline();
                 results();
+                separator();
                 break;
             
             case '0':

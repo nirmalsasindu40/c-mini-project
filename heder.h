@@ -26,6 +26,10 @@ void party_login();
 void party_logout();
 int is_party_logged_in();
 
+void voter_login();
+void voter_logout();
+int is_voter_logged_in();
+
 // Admin Functions
 void admin_panel();
 void admin_set_polling_time();

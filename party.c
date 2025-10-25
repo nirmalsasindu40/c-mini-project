@@ -66,15 +66,3 @@ int Party_Registration() {
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
