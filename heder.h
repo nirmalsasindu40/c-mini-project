@@ -43,6 +43,7 @@ int verify_candidate_in_district(char *candidate_name, char *voter_district);
 void record_vote(char *candidate_name, char *voter_nic, char *voter_district);
 void mark_voter_as_voted(char *nic);
 void to_lowercase(char *str, char *result);
+int is_polling_active();
 
 // Results Functions
 void results();
