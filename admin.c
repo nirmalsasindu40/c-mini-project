@@ -56,7 +56,7 @@ void publish_results() {
 }
 
 // Function to unpublish results
-void unpublish_results() {
+void unpublish_results(){
     FILE *fp = fopen("results_status.txt", "w");
     if (fp == NULL) {
         printf("Error unpublishing results!\n");
@@ -88,6 +88,7 @@ void view_statistics() {
     
     if (fp_voters != NULL) {
         while (fgets(line, sizeof(line), fp_voters)) {
+            
             voter_count++;
         }
         fclose(fp_voters);
