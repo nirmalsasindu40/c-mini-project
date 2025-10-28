@@ -6,8 +6,8 @@ void candidate_registration(){
     char name[100];
     char party[150];
     char district[25];
-    int election_number[20];
-    int age[3];
+    int election_number 20;
+    int age 3;
     char nic[50];
     char username[55];
     char password[25];
@@ -50,7 +50,7 @@ void candidate_registration(){
         return;
     }
 
-    fprintf(fp,"%s|%s|%s|%d|%s|%s|%s\n",name,party,district,election_number,nic,username,password);
+    fprintf(fp,"%s|%s|%s|%d|%d|%s|%s|%s\n",name,party,district,election_number,age,nic,username,password);
 
     fclose(fp);
     

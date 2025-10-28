@@ -5,3 +5,4 @@ sandaru|6422156|sabaragamuwa|sandaru0096|200233801449|123
 dasula|-1365247868|kaluthara|dasulawosada|200435800944|1234
 malith|6422140|galle|malith123|12345678|pass123
 kamal|6422140|galle|kamal123|123456789|pass123
+sandaru|6422140|sg|u001|200233801449|pass123
