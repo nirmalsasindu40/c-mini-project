@@ -4,16 +4,16 @@
 #include "heder.h"
 
 int party_logged_in = 0;
-char logged_party_name[100];
+char logged_party_name[100];    //include 4 variyables
 char logged_party_leader[100];
 int logged_party_code = 0;
 
 // Simple string compare (case insensitive)
-int compare_strings(char *str1, char *str2) {
+int compare_strings(char *str1, char *str2) {   //open to str1,str2 pointes 
     int i;
-    for (i = 0; str1[i] && str2[i]; i++) {
+    for (i = 0; str1[i] && str2[i]; i++) {      //assigen str1,2 i
         char c1 = str1[i];
-        char c2 = str2[i];
+        char c2 = str2[i];                      //str1 and str2 value assing with c1,c2 
         
         // Convert to lowercase manually
         if (c1 >= 'A' && c1 <= 'Z') c1 = c1 + 32;
@@ -32,7 +32,7 @@ int verify_party(char *username, char *password, char *party_name, char *party_l
     int file_code;
     char file_username[50], file_password[25];
     
-    fp = fopen("party_login_data.txt", "r");
+    fp = fopen("party_Registration.txt", "r");
     
     if (fp == NULL) {
         return 0;

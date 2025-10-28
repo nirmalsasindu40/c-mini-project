@@ -46,7 +46,7 @@ void results();
 void display_overall_results();
 void display_resultsgit_by_district();
 void display_results_by_party();
-<<<<<<< HEAD
+
 
 int count_total_votes();
 int count_votes_for_candidate(char *candidate_name);
@@ -54,9 +54,9 @@ void view_candidate_performance(char *candidate_name);
 void candidate_view_results(char *candidate_name);
 void display_overall_results();
 void results();
-=======
+
 void view_candidate_performance(char *candidate_name);
 void candidate_view_results(char *candidate_name);
->>>>>>> TG_2097_B1
+
 
 #endif

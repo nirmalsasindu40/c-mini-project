@@ -80,11 +80,8 @@ int main() {
                 printf("PARTY LOGIN\n");
                 doubleline();
                 loging_party();
-<<<<<<< HEAD
-                
-=======
                 separator();
->>>>>>> TG_2097_B1
+
                 break;
             
             case '7':
