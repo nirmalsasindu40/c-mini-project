@@ -6,8 +6,8 @@ void candidate_registration(){
     char name[100];
     char party[150];
     char district[25];
-    int election_number 20;
-    int age 3;
+    int election_number;
+    int age;
     char nic[50];
     char username[55];
     char password[25];
